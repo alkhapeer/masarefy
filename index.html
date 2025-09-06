@@ -145,10 +145,10 @@
       </div>
     </section>
 
-<section class="section container" id="video" aria-label="فيديو تعريفي">
-  <h2>شاهد الفكرة في 30 ثانية</h2>
-  <div class="video-wrap">
-
+    <section class="section container" id="video" aria-label="فيديو تعريفي">
+      <h2>شاهد الفكرة في 30 ثانية</h2>
+      <div class="video-wrap" style="display:flex;justify-content:center;">
+    
     <!-- الكود القديم (محفوظ كتعليق) -->
     <!--
     <video controls preload="none" poster="./video-poster.jpg" aria-label="فيديو تعريفي لتطبيق مصاريفي">
@@ -158,15 +158,19 @@
     </video>
     -->
 
-    <!-- الكود الجديد: تشغيل تلقائي بدون أزرار -->
-    <video autoplay muted loop playsinline preload="auto" width="100%" aria-label="فيديو تعريفي لتطبيق مصاريفي" style="border-radius:12px;display:block;">
-      <source src="./masarefi2.mp4" type="video/mp4" />
-      <source src="./masarefi2.webm" type="video/webm" />
+    <!-- الكود الجديد: فيديو نصف الحجم (responsive) -->
+        <video autoplay muted loop playsinline preload="auto" 
+           style="max-width:50%;height:auto;aspect-ratio:16/9;
+                  border-radius:12px;display:block;"
+           aria-label="فيديو تعريفي لتطبيق مصاريفي">
+        <source src="./masarefi2.mp4" type="video/mp4" />
+        <source src="./masarefi2.webm" type="video/webm" />
       متصفحك لا يدعم تشغيل الفيديو.
-    </video>
+        </video>
 
-  </div>
+      </div>
   </section>
+
 
 
   <footer>
