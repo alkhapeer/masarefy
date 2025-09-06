@@ -145,18 +145,29 @@
       </div>
     </section>
 
-    <section class="section container" id="video" aria-label="فيديو تعريفي">
-      <h2>شاهد الفكرة في 30 ثانية</h2>
-      <div class="video-wrap">
-        // <video controls preload="none" poster="./video-poster.jpg" aria-label="فيديو تعريفي لتطبيق مصاريفي"> //
-        <video controls preload="none" poster="./masarefi2.mp4" aria-label="فيديو تعريفي لتطبيق مصاريفي">
-          <source src="./myexpenses-30s.mp4" type="video/mp4" />
-          <source src="./myexpenses-30s.webm" type="video/webm" />
-          متصفحك لا يدعم تشغيل الفيديو.
-        </video>
-      </div>
-    </section>
-  </main>
+<section class="section container" id="video" aria-label="فيديو تعريفي">
+  <h2>شاهد الفكرة في 30 ثانية</h2>
+  <div class="video-wrap">
+
+    <!-- الكود القديم (محفوظ كتعليق) -->
+    <!--
+    <video controls preload="none" poster="./video-poster.jpg" aria-label="فيديو تعريفي لتطبيق مصاريفي">
+      <source src="./myexpenses-30s.mp4" type="video/mp4" />
+      <source src="./myexpenses-30s.webm" type="video/webm" />
+      متصفحك لا يدعم تشغيل الفيديو.
+    </video>
+    -->
+
+    <!-- الكود الجديد: تشغيل تلقائي بدون أزرار -->
+    <video autoplay muted loop playsinline preload="auto" width="100%" aria-label="فيديو تعريفي لتطبيق مصاريفي" style="border-radius:12px;display:block;">
+      <source src="./masarefi2.mp4" type="video/mp4" />
+      <source src="./masarefi2.webm" type="video/webm" />
+      متصفحك لا يدعم تشغيل الفيديو.
+    </video>
+
+  </div>
+  </section>
+
 
   <footer>
     <div class="container" style="display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between">
