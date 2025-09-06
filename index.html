@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MyExpenses – مصاريفي | تحكّم في مصاريفك بسهولة وواجهة عربية 100%</title>
+  <meta name="description" content="MyExpenses – مصاريفي: أسهل طريقة لتسجيل المصاريف اليومية، إحصائيات واضحة، ونصائح ذكية. جرّبه الآن مجانًا!" />
+  <meta name="theme-color" content="#0ea5e9" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="MyExpenses – مصاريفي" />
+  <meta property="og:description" content="تحكّم في مصاريفك بسهولة وواجهة عربية 100%" />
+  <meta property="og:image" content="./og-image.jpg" />
+  <meta property="og:url" content="https://www.socialcreator.com/myexpenses" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Favicons (replace with your assets) -->
+  <link rel="icon" href="./favicon.ico" />
+  <link rel="apple-touch-icon" href="./apple-touch-icon.png" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet" />
+
+  <style>
+    :root{
+      --bg:#0b1220;
+      --brand:#0ea5e9;
+      --text:#0f172a;
+      --muted:#475569;
+      --card:#ffffff;
+      --ring:rgba(14,165,233,.25);
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;scroll-behavior:smooth}
+    body{margin:0;font-family:"Cairo",system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial,"Noto Sans",sans-serif;color:var(--text);background:#f8fafc}
+
+    .container{width:min(1100px,92vw);margin-inline:auto}
+
+    header{
+      position:relative;overflow:hidden;color:#fff;background:linear-gradient(135deg,var(--bg) 0%,#111827 60%,#0f172a 100%);
+    }
+    nav{display:flex;align-items:center;justify-content:space-between;padding:16px 0}
+    .brand{display:flex;align-items:center;gap:.6rem;font-weight:800;letter-spacing:.2px;text-decoration:none;color:inherit}
+    .brand__logo{inline-size:40px;block-size:40px;border-radius:10px;background:linear-gradient(135deg,var(--brand),#22d3ee);display:grid;place-items:center;color:#001b2e;font-weight:900}
+    .brand__name{font-size:1.15rem}
+    .cta-nav{display:inline-flex;align-items:center;gap:.5rem;background:#fff;color:#0b1320;border:0;border-radius:999px;padding:.65rem 1rem;font-weight:700;text-decoration:none}
+    .cta-nav:focus-visible,.cta:focus-visible{outline:3px solid var(--ring);outline-offset:2px}
+
+    .hero{display:grid;grid-template-columns:1.05fr .95fr;gap:36px;padding:28px 0 64px;align-items:center}
+    .hero h1{font-size:clamp(1.8rem,3.4vw,3rem);line-height:1.15;margin:0 0 14px;font-weight:800}
+    .hero p{margin:0 0 22px;color:#e2e8f0;opacity:.95}
+    .hero .cta{display:inline-flex;align-items:center;gap:.6rem;background:var(--brand);color:#001b2e;border:0;border-radius:12px;padding:14px 18px;font-size:1.05rem;font-weight:800;text-decoration:none}
+    .hero .mini{display:flex;gap:12px;flex-wrap:wrap;color:#cbd5e1;margin-top:14px;font-size:.95rem}
+    .hero__screen{position:relative;border-radius:16px;background:#0b1220;padding:8px}
+    .phone{border-radius:14px;overflow:hidden;background:#020617;border:1px solid rgba(255,255,255,.08);box-shadow:0 10px 30px rgba(0,0,0,.25)}
+    .phone img{display:block;width:100%;height:auto}
+
+    .section{padding:56px 0}
+    .section h2{font-size:clamp(1.4rem,2.5vw,2.2rem);margin:0 0 14px}
+    .features{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .card{background:var(--card);border:1px solid #e2e8f0;border-radius:16px;padding:18px;box-shadow:0 4px 14px rgba(2,6,23,.05)}
+    .card h3{margin:0 0 8px;font-size:1.05rem}
+    .muted{color:var(--muted)}
+
+    .video-wrap{background:#0f172a;border-radius:18px;padding:12px}
+    video{width:100%;display:block;border-radius:12px}
+
+    footer{padding:36px 0;color:#475569}
+
+    @media (max-width: 960px){
+      .hero{grid-template-columns:1fr;gap:22px;padding:22px 0 44px}
+      .features{grid-template-columns:1fr}
+      .cta-nav{display:none}
+    }
+  </style>
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "MyExpenses – مصاريفي",
+    "operatingSystem": "Web, Android, iOS",
+    "applicationCategory": "FinanceApplication",
+    "offers": {"@type":"Offer","price":"0","priceCurrency":"USD"},
+    "description": "تطبيق لإدارة المصاريف اليومية مع واجهة عربية كاملة وإحصائيات سهلة.",
+    "url": "https://www.socialcreator.com/myexpenses"
+  }
+  </script>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav aria-label="الرئيسية">
+        <a class="brand" href="#top" aria-label="MyExpenses – مصاريفي">
+          <span class="brand__logo" aria-hidden>💸</span>
+          <span class="brand__name">MyExpenses – مصاريفي</span>
+        </a>
+        <a class="cta-nav" href="https://www.socialcreator.com/myexpenses" target="_blank" rel="noopener">جرّبه الآن مجانًا</a>
+      </nav>
+
+      <div class="hero">
+        <div>
+          <h1>تحكّم في مصاريفك… بسهولة وواجهة عربية 100%</h1>
+          <p>سجّل مصاريفك اليومية في ثوانٍ، واعرف أين يذهب مالك، واستفد من نصائح ذكية تساعدك على الادخار بدون تعقيد.</p>
+          <a class="cta" href="https://www.socialcreator.com/myexpenses" target="_blank" rel="noopener" aria-label="جرّبه الآن مجانًا على الموقع">
+            جرّبه الآن مجانًا
+          </a>
+          <div class="mini">
+            <span>✔ واجهة عربية بالكامل</span>
+            <span>✔ إحصائيات ورسوم بيانية</span>
+            <span>✔ مجاني للتجربة</span>
+          </div>
+        </div>
+        <div class="hero__screen" aria-hidden>
+          <div class="phone">
+            <img src="./app-screenshot.png" alt="واجهة تطبيق MyExpenses – مصاريفي" loading="lazy" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section container" id="features" aria-label="الميزات">
+      <h2>لماذا MyExpenses – مصاريفي؟</h2>
+      <p class="muted">كل ما تحتاجه لإدارة ميزانيتك اليومية — بدون صداع.</p>
+      <div class="features" role="list">
+        <article class="card" role="listitem">
+          <h3>إضافة سريعة للمصروف</h3>
+          <p class="muted">أضف المصروف بالمبلغ والتصنيف والملاحظة خلال ثوانٍ—تجربة استخدام خفيفة وواضحة.</p>
+        </article>
+        <article class="card" role="listitem">
+          <h3>إحصائيات ورسوم واضحة</h3>
+          <p class="muted">تابع أين تذهب مصاريفك عبر مخططات بسيطة وأرقام تُفهم من أول نظرة.</p>
+        </article>
+        <article class="card" role="listitem">
+          <h3>نصائح ذكية للادخار</h3>
+          <p class="muted">اقتراحات عملية — مثل قاعدة 20% — لمساعدتك على ضبط المصروف وتحقيق أهدافك.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section container" id="video" aria-label="فيديو تعريفي">
+      <h2>شاهد الفكرة في 30 ثانية</h2>
+      <div class="video-wrap">
+        <video controls preload="none" poster="./video-poster.jpg" aria-label="فيديو تعريفي لتطبيق مصاريفي">
+          <source src="./myexpenses-30s.mp4" type="video/mp4" />
+          <source src="./myexpenses-30s.webm" type="video/webm" />
+          متصفحك لا يدعم تشغيل الفيديو.
+        </video>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container" style="display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between">
+      <small>© <span id="y"></span> MyExpenses – مصاريفي</small>
+      <a class="cta" href="https://www.socialcreator.com/myexpenses" target="_blank" rel="noopener" style="background:var(--brand);color:#001b2e;border-radius:999px;padding:10px 14px;text-decoration:none;font-weight:800">جرّبه الآن مجانًا</a>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+    (function(){
+      function handleFirstTab(e){
+        if(e.key === 'Tab'){
+          document.documentElement.classList.add('user-is-tabbing');
+          window.removeEventListener('keydown', handleFirstTab);
+        }
+      }
+      window.addEventListener('keydown', handleFirstTab);
+    })();
+  </script>
+
+  <!-- اختياري: Google Analytics GA4 -->
+  <!--
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);} gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+  -->
+</body>
+</html>
